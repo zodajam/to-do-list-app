@@ -7,24 +7,6 @@ input.addEventListener("keyup", (event) => { // eventListener to check if user p
     }
 });
 
-const randomTasks = [
-    "Eat a raw fish",
-    "Do 50 pushups",
-    "Go to the store and buy milk",
-    "Play a game of chess",
-    "Read a book",
-    "Go fishing",
-    "Explore the nearest forest",
-    "Chop down a tree",
-    "Drink some water",
-    "Eat something",
-    "Go out in the woods looking for a snake"
-]
-
-document.getElementById("randomTaskBtn").onclick = function() {
-    main.innerHTML = `<div class="container">${randomTasks[Math.floor(Math.random() * randomTasks.length)]}</div>`;
-}
-
 function call() { // main function for the program
     const main = document.getElementById("main");
     if(input.value.toLowerCase() === "/clear") { // /clear command to remove every task
